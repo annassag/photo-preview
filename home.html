@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+	<title>Sorry We Missed You</title>
+	<link rel="stylesheet" type="text/css" href="assets/fixed.css">
+<style>
+
+		html,
+		body {
+			margin: 0;
+			box-sizing: border-box;
+			height: 100vh;
+  			width: 100vw;
+  			overflow: hidden;
+		}
+
+		#sorry {
+			width: 100vw;
+			height: 100vh;
+			z-index: 700;
+			background-color: black;
+			opacity: 0.9;
+		}
+
+		#sorry img {
+			height: 90vh;
+			top: 50%;
+			left: 50%;
+			position: relative;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		#photo-container {
+			z-index: 100;
+		}
+
+		.mySlides {
+			display: none;
+/*			height: 100vh;*/
+			width: 100%;
+			left: 50%;
+			top: 50%;
+			position: absolute;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			z-index: -100;
+		}
+
+		.caption {
+			cursor: pointer;
+		}
+
+
+		img {
+			z-index: 100;
+		}
+
+
+			@font-face {
+			  	font-family: 'OPSPastPerfect';
+			  	src:  url('assets/OPSPastPerfect-Regular.woff2') format('woff2');
+			}
+
+
+
+
+
+
+@media screen and (max-width: 800px) { 
+      * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+  		touch-action: none;
+      }
+}
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="photo-container">
+  <div><img class="mySlides" src="assets/1.jpg">
+  	<div class="caption">Dylan Hausthor</div>	
+  	</div>
+  <div><img class="mySlides" src="assets/2.jpg">
+  	<a href="tarah.html">
+  	<div class="caption">Tarah Douglas</div></a>
+  	</div>
+  <div><img class="mySlides" src="assets/3.jpg">
+  	<div class="caption">Max Gavrich</div>	
+  	</div> 	
+  <div><img class="mySlides" src="assets/4.jpg">
+  	<div class="caption">Annie Ling</div>	
+  	</div> 	
+  <div><img class="mySlides" src="assets/5.jpg">
+        <a href="rosemary.html">
+  	<div class="caption" style="color:white">Rosemary Warren</div></a>
+  	</div> 	
+  <div><img class="mySlides" src="assets/6.jpg">
+  	<div class="caption">Mickey Aloisio</div>	
+  	</div> 	
+  <div><img class="mySlides" src="assets/7.jpg">
+  	<div class="caption">Alex Nelson</div>	
+  	</div> 	
+  <div><img class="mySlides" src="assets/8.jpg">
+  	<div class="caption">Nabil Harb</div>	
+  	</div> 	
+  <div><img class="mySlides" src="assets/9.jpg">
+  	<div class="caption">Ronghui Chen</div>	
+  	</div> 	
+  <div><img class="mySlides" src="assets/10.jpg">
+  	<div class="caption" style="color:white">Jackie Furtado</div>	
+  	</div> 	</div>
+
+  <div class="button-left" onclick="plusDivs(-1)"></div>
+  <div class="button-right" onclick="plusDivs(1)"></div>
+
+
+<div class="dropdown">
+  <div class="top-left">
+  <div class="dropdown-content">
+    <a href="#">Mickey<br>Aloisio</a>
+    <a href="#">Ronghui<br>Chen</a>
+    <a href="tarah.html">Tarah<br>Douglas</a>
+    <a href="#">Jackie<br>Furtado</a>
+    <a href="#">Max<br>Gavrich</a>
+    <a href="#">Nabil<br>Harb</a>
+    <a href="#">Dylan<br>Hausthor</a>
+    <a href="#">Annie<br>Ling</a>
+    <a href="#">Alex<br>Nelson</a>
+    <a href="rosemary.html">Rosemary<br>Warren</a>
+  </div>
+</div>
+</div></div>
+
+<div class="dropdown">
+  <div class="top-right">
+  <div class="dropdown-popup">
+INFO TEXTTTTTTTTTTTTTTTTTT
+  </div>
+</div>
+</div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+  showNames(nameIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+var nameIndex = 1;
+showNames(nameIndex);
+
+function plusNames(n) {
+  showNames(nameIndex += n);
+}
+
+function showNames(n) {
+  var i;
+  var x = document.getElementsByClassName("caption");
+  if (n > x.length) {nameIndex = 1}
+  if (n < 1) {nameIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[nameIndex-1].style.display = "block";  
+}
+
+$("#sorry").click(function(){
+
+    $("#sorry").remove();
+
+
+});
+
+</script>
+
+
+
+
+</html>

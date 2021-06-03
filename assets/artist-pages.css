@@ -1,0 +1,148 @@
+		html,
+		body {
+			margin: 0;
+			box-sizing: border-box;
+			height: 100vh;
+  			width: 100vw;
+  			overflow-x: hidden;
+		}
+
+#video {
+			padding-top: 100px;
+			width: 65%;
+			display: block;
+			left: 0;
+		  	margin-left: auto;
+		  	margin-right: auto;
+}
+
+		.mySlides img {
+			padding-top: 100px;
+			width: 65%;
+			display: block;
+		  	margin-left: auto;
+		  	margin-right: auto;
+		}
+
+	.mySlides-vertical img {
+			width: 45%;
+			padding-top: 100px;
+			display: block;
+		  	margin-left: auto;
+		  	margin-right: auto;
+		}
+
+	.buffer {
+			height: 100px;
+			width: 100vw;
+	}
+
+	.image-captions {
+		font-family: neue-haas-grotesk-text, sans-serif;
+		font-size: 12px;
+		width: 65%;
+		display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	}
+
+	.article {
+		font-family: 'Bradford', serif;
+		font-size: 26px;
+		line-height: 1.3;
+		width: 65%;
+		display: block;
+	  	margin-left: auto;
+	  	margin-right: auto;
+	}
+
+	.article .italics {
+		font-family: 'Bradford-italic';
+	}
+
+.article-author {
+	font-family: 'Bradford-italic', serif;
+	font-size: 26px;
+	width: 65%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-indent: 80px;	
+  	line-height: 1.3;
+}
+
+.article-quote {
+	font-family: 'Bradford';
+	font-size: 26px;
+	width: 65%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-left: 80px;	
+
+}
+
+.caption {
+	cursor: default;
+}
+
+			@font-face {
+			  	font-family: 'OPSPastPerfect';
+			  	src:  url('OPSPastPerfect-Regular.woff2') format('woff2');
+			}
+
+			@font-face {
+			  	font-family: 'Bradford';
+			  	src:  url('BradfordLL-Book.otf') format('opentype');
+			}
+
+			@font-face {
+			  	font-family: 'Bradford-italic';
+			  	src:  url('BradfordLL-BookItalic.otf') format('opentype');
+			}
+
+@import url("https://p.typekit.net/p.css?s=1&k=ktm6iak&ht=tk&f=39504.39505&a=36592780&app=typekit&e=css");
+
+@font-face {
+font-family:"neue-haas-grotesk-text";
+src:url("https://use.typekit.net/af/0230dd/00000000000000007735bb33/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/0230dd/00000000000000007735bb33/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/0230dd/00000000000000007735bb33/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"neue-haas-grotesk-text";
+src:url("https://use.typekit.net/af/aed66e/00000000000000007735bb35/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/aed66e/00000000000000007735bb35/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/aed66e/00000000000000007735bb35/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;
+}
+
+a:hover {background-color: black; color: white;}
+
+a {
+	cursor: grab;
+	text-decoration: none;
+	color: black;
+}
+
+
+
+@media screen and (max-width: 800px) { 
+      * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+  		touch-action: none;
+      }
+
+	
+
+    }
